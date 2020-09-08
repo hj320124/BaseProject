@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseVC : UIViewController
-//隐藏左边返回按钮
--(void)hiddenLeftNavigationButton;
+
+- (void)addNavigationBar;
 
 @end
 

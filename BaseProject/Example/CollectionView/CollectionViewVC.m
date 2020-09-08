@@ -41,7 +41,6 @@ layout.scrollDirection=UICollectionViewScrollDirectionHorizontal;
     self.collectionView.dataSource=self;
     [self loadData];
     [self addBtn];
-    [self hiddenLeftNavigationButton];
     
 }
 

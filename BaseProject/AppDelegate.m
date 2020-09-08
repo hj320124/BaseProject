@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+RegisterRoute.h"
-#import "TabbarViewController.h"
+#import "PPTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +24,7 @@
     
     self.window.frame = [UIScreen mainScreen].bounds;
     
-    self.window.rootViewController = [[TabbarViewController alloc]init];
+    self.window.rootViewController = [[PPTabBarController alloc] init];
     
     [self.window makeKeyAndVisible];
     

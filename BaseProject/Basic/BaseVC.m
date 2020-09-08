@@ -16,40 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self setCustomBackButton];
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.fd_prefersNavigationBarHidden = YES;
 }
 
-
-/**
- *设置返回按钮
- */
--(void)setCustomBackButton
-{
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setImageEdgeInsets:UIEdgeInsetsMake(7, 10, 7, 10)];
-    [leftBtn setImage:[UIImage imageNamed:@"NavigatonBack"] forState:UIControlStateNormal];
-    [leftBtn setFrame:CGRectMake(0, 0, 64, 44)];
-    [leftBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
-    
+- (void)addNavigationBar {
+    [self setupNormalNavigationBarViewWithBarTitle:@""
+                                         leftTitle:nil
+                                         leftImage:@"icon_back_dark"
+                                        rightTitle:nil
+                                        rightImage:@""];
+    self.customNavigationBarView.hideTitle = YES;
+    self.customNavigationBarView.lineAlpha = 0;
+    self.customNavigationBarView.backgroundColor = [UIColor colorWithHexStr:@"#FFFFFF" alpha:0];
 }
-
--(void)back
-{
-    [self.navigationController popViewControllerAnimated:YES];
-
-}
-
-
-
--(void)hiddenLeftNavigationButton
-{
-    self.navigationItem.leftBarButtonItem=nil;
-    self.navigationItem.hidesBackButton=YES;
-}
-
 
 @end

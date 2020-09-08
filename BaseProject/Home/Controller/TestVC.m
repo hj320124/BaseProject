@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addNavigationBar];
     self.view.backgroundColor=[UIColor whiteColor];
     self.title=self.name;
     _btn=[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
@@ -63,28 +63,5 @@
     [hud hideAnimated:YES afterDelay:2];
    
 }
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed=YES;
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    self.tabBarController.hidesBottomBarWhenPushed=NO;
-}
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 
 @end
