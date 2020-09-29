@@ -74,7 +74,7 @@
 -(void)p_addBottomLine{
     self.bottomLine = [[UIView alloc]init];
     self.bottomLine.frame = CGRectMake(0, self.height-1, self.width, 1);
-    self.bottomLine.backgroundColor = [UIColor colorWithHexStr:PPLineColorValue];
+    self.bottomLine.backgroundColor = [UIColor colorWithHexString:PPLineColorValue];
     [self addSubview:self.bottomLine];
 }
 
@@ -103,7 +103,7 @@
 //    self.titleLabel.text = barTitle;
     self.titleText = barTitle;
     self.titleLabel.font = UIFont.systemFont(PPTitleFontValue);
-    self.titleLabel.textColor = [UIColor colorWithHexStr:PPTitleColorValue];
+    self.titleLabel.textColor = [UIColor colorWithHexString:PPTitleColorValue];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.titleLabel];
     CGFloat titleLeft = self.leftButton ? (self.leftButton.right+15) : 15;
@@ -187,7 +187,7 @@
     UIButton *button = [[UIButton alloc] init];
     if (buttonTitle) {
         [button setTitle:buttonTitle forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor colorWithHexStr:PPTitleColorValue] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor colorWithHexString:PPTitleColorValue] forState:UIControlStateNormal];
         button.titleLabel.font = UIFont.systemFont(15);
     }
     if (imageName) {
@@ -223,7 +223,7 @@
 }
 
 - (void)setLineAlpha:(CGFloat)lineAlpha{
-    self.bottomLine.backgroundColor = [UIColor colorWithHexStr:PPLineColorValue alpha:lineAlpha];
+    self.bottomLine.backgroundColor = [UIColor colorWithHexString:PPLineColorValue alpha:lineAlpha];
 }
 
 -(void)setBackImage:(NSString *)backImage{
@@ -335,7 +335,7 @@
         UILabel *labal = [[UILabel alloc] init];
         labal.frame = CGRectMake(titleMagin, StatusBarHeight, titleWidth, self.barItemHeight);
         labal.font = UIFont.systemFont(PPTitleFontValue);
-        labal.textColor = [UIColor colorWithHexStr:PPTitleColorValue];
+        labal.textColor = [UIColor colorWithHexString:PPTitleColorValue];
         labal.textAlignment = NSTextAlignmentCenter;
         [self addSubview:labal];
         self.titleLabel = labal;
@@ -344,7 +344,7 @@
     
     self.bottomLine = [[UIView alloc] init];
     self.bottomLine.frame = CGRectMake(0, self.height-1, self.width, 1);
-    self.bottomLine.backgroundColor = [UIColor colorWithHexStr:PPLineColorValue];
+    self.bottomLine.backgroundColor = [UIColor colorWithHexString:PPLineColorValue];
     [self addSubview:self.bottomLine];
 }
 
@@ -362,7 +362,7 @@
                                                  text:model.title];
         width = ceilf(width);
         [button setTitle:model.title forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor colorWithHexStr:@"#000000"] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor colorWithHexString:@"#000000"] forState:UIControlStateNormal];
         button.titleLabel.font = UIFont.systemFont(15);
     }
     

@@ -12,8 +12,8 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self setTitleColor: [UIColor colorWithHexStr:@"#A0A6B3"] forState:UIControlStateNormal];
-        [self setTitleColor:[UIColor colorWithHexStr:PPPrimaryColorValue] forState:UIControlStateSelected];
+        [self setTitleColor: [UIColor colorWithHexString:@"#A0A6B3"] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor colorWithHexString:PPPrimaryColorValue] forState:UIControlStateSelected];
         self.imageView.contentMode = UIViewContentModeCenter;
         self.imageView.clipsToBounds = YES;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;

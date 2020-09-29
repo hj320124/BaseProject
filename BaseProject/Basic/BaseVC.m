@@ -28,7 +28,7 @@
                                         rightImage:@""];
     self.customNavigationBarView.hideTitle = YES;
     self.customNavigationBarView.lineAlpha = 0;
-    self.customNavigationBarView.backgroundColor = [UIColor colorWithHexStr:@"#FFFFFF" alpha:0];
+    self.customNavigationBarView.backgroundColor = [UIColor colorWithHexString:@"#ffffff" alpha:0];
 }
 
 @end

@@ -21,15 +21,14 @@
 #import "JSObjection.h"
 #import "BUIControl.h"
 #import "Masonry.h"
-#import "UIColor+LYUtil.h"
 #import "PPConfigConst.h"
 #import "PPMacro.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import <UIImageView+WebCache.h>
-#import "UIColor+LYUtil.h"
 #import "UIFont+LYUtil.h"
 #import "UILabel+LYUtil.h"
 #import "NSString+LYUtil.h"
 #import "UIControl+LYEnlargeResponse.h"
 #import "UIViewController+LYUtil.h"
+#import "UIColor+Hex.h"
 

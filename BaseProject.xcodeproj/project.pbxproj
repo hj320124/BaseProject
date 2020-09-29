@@ -142,6 +142,15 @@
 		42BE3C7721AF90890011E8C4 /* NSObject+SXRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BE3C6421AF90890011E8C4 /* NSObject+SXRuntime.m */; };
 		42BE3D8421AF98BB0011E8C4 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BE3D8321AF98BB0011E8C4 /* libxml2.2.tbd */; };
 		B3B17007B7E5E7CA4C54B9EF /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8007E0788CCC7302F662BA2A /* libPods-BaseProject.a */; };
+		F751C6B52522C45D0092EC60 /* PPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6A32522C45D0092EC60 /* PPRequest.m */; };
+		F751C6B62522C45D0092EC60 /* PPBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6A42522C45D0092EC60 /* PPBatchRequest.m */; };
+		F751C6B72522C45D0092EC60 /* PPNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6A52522C45D0092EC60 /* PPNetworkAgent.m */; };
+		F751C6B82522C45D0092EC60 /* PPNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6A72522C45D0092EC60 /* PPNetworkConfig.m */; };
+		F751C6B92522C45D0092EC60 /* PPBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6AC2522C45D0092EC60 /* PPBaseRequest.m */; };
+		F751C6BA2522C45D0092EC60 /* PPNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6AF2522C45D0092EC60 /* PPNetworkPrivate.m */; };
+		F751C6BB2522C45D0092EC60 /* PPChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6B22522C45D0092EC60 /* PPChainRequest.m */; };
+		F751C6BC2522C45D0092EC60 /* PPBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6B32522C45D0092EC60 /* PPBatchRequestAgent.m */; };
+		F751C6BD2522C45D0092EC60 /* PPChainRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = F751C6B42522C45D0092EC60 /* PPChainRequestAgent.m */; };
 		F7A0319725075E98005C9C62 /* PPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A0318F25075E97005C9C62 /* PPTabBarController.m */; };
 		F7A0319825075E98005C9C62 /* PPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A0319025075E98005C9C62 /* PPNavigationController.m */; };
 		F7A0319925075E98005C9C62 /* PPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A0319425075E98005C9C62 /* PPTabBar.m */; };
@@ -156,7 +165,6 @@
 		F7A031C0250767CE005C9C62 /* UILabel+LYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031B4250767CD005C9C62 /* UILabel+LYUtil.m */; };
 		F7A031C1250767CE005C9C62 /* UIViewController+LYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031B5250767CD005C9C62 /* UIViewController+LYUtil.m */; };
 		F7A031C2250767CE005C9C62 /* UIImage+LYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031B6250767CD005C9C62 /* UIImage+LYUtil.m */; };
-		F7A031C3250767CE005C9C62 /* UIColor+LYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031B8250767CD005C9C62 /* UIColor+LYUtil.m */; };
 		F7A031C4250767CE005C9C62 /* UIImage+LYCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031BB250767CE005C9C62 /* UIImage+LYCompress.m */; };
 		F7A031C8250768E9005C9C62 /* LYCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031C7250768E9005C9C62 /* LYCommonTool.m */; };
 /* End PBXBuildFile section */
@@ -459,6 +467,25 @@
 		B1FDB69FC546C0E2D291AD72 /* libPods-BaseProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C366094BD75D12E5048752BC /* Pods-BaseProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB6BAEA0B29EAFF97B623D0C /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
+		F751C6A22522C45D0092EC60 /* PPBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseRequest.h; sourceTree = "<group>"; };
+		F751C6A32522C45D0092EC60 /* PPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRequest.m; sourceTree = "<group>"; };
+		F751C6A42522C45D0092EC60 /* PPBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBatchRequest.m; sourceTree = "<group>"; };
+		F751C6A52522C45D0092EC60 /* PPNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkAgent.m; sourceTree = "<group>"; };
+		F751C6A62522C45D0092EC60 /* PPNetworkPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkPrivate.h; sourceTree = "<group>"; };
+		F751C6A72522C45D0092EC60 /* PPNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkConfig.m; sourceTree = "<group>"; };
+		F751C6A82522C45D0092EC60 /* PPChainRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPChainRequestAgent.h; sourceTree = "<group>"; };
+		F751C6A92522C45D0092EC60 /* PPBatchRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBatchRequestAgent.h; sourceTree = "<group>"; };
+		F751C6AA2522C45D0092EC60 /* PPChainRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPChainRequest.h; sourceTree = "<group>"; };
+		F751C6AB2522C45D0092EC60 /* PPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRequest.h; sourceTree = "<group>"; };
+		F751C6AC2522C45D0092EC60 /* PPBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseRequest.m; sourceTree = "<group>"; };
+		F751C6AD2522C45D0092EC60 /* PPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetwork.h; sourceTree = "<group>"; };
+		F751C6AE2522C45D0092EC60 /* PPNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkConfig.h; sourceTree = "<group>"; };
+		F751C6AF2522C45D0092EC60 /* PPNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkPrivate.m; sourceTree = "<group>"; };
+		F751C6B02522C45D0092EC60 /* PPBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBatchRequest.h; sourceTree = "<group>"; };
+		F751C6B12522C45D0092EC60 /* PPNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkAgent.h; sourceTree = "<group>"; };
+		F751C6B22522C45D0092EC60 /* PPChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPChainRequest.m; sourceTree = "<group>"; };
+		F751C6B32522C45D0092EC60 /* PPBatchRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBatchRequestAgent.m; sourceTree = "<group>"; };
+		F751C6B42522C45D0092EC60 /* PPChainRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPChainRequestAgent.m; sourceTree = "<group>"; };
 		F784405A1E4BB8E0585F3763 /* Pods-BaseProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProjectTests/Pods-BaseProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7A0318F25075E97005C9C62 /* PPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTabBarController.m; sourceTree = "<group>"; };
 		F7A0319025075E98005C9C62 /* PPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNavigationController.m; sourceTree = "<group>"; };
@@ -477,7 +504,6 @@
 		F7A031A82507674E005C9C62 /* LYNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNavigationBarView.h; sourceTree = "<group>"; };
 		F7A031A92507674E005C9C62 /* LYNavigationBarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNavigationBarItemModel.m; sourceTree = "<group>"; };
 		F7A031AA2507674E005C9C62 /* LYNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNavigationBarView.m; sourceTree = "<group>"; };
-		F7A031AD250767CC005C9C62 /* UIColor+LYUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+LYUtil.h"; path = "../../../Work/PhoenixBookPub/PhoenixBookPub/Expand(扩展)/Category(分类)/UIColor+LYUtil.h"; sourceTree = "<group>"; };
 		F7A031AE250767CC005C9C62 /* NSString+LYUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LYUtil.m"; sourceTree = "<group>"; };
 		F7A031AF250767CC005C9C62 /* UIViewController+LYUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LYUtil.h"; sourceTree = "<group>"; };
 		F7A031B0250767CD005C9C62 /* UIControl+LYEnlargeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LYEnlargeResponse.m"; sourceTree = "<group>"; };
@@ -488,7 +514,6 @@
 		F7A031B5250767CD005C9C62 /* UIViewController+LYUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LYUtil.m"; sourceTree = "<group>"; };
 		F7A031B6250767CD005C9C62 /* UIImage+LYUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYUtil.m"; sourceTree = "<group>"; };
 		F7A031B7250767CD005C9C62 /* UIControl+LYEnlargeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+LYEnlargeResponse.h"; sourceTree = "<group>"; };
-		F7A031B8250767CD005C9C62 /* UIColor+LYUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LYUtil.m"; path = "../../../Work/PhoenixBookPub/PhoenixBookPub/Expand(扩展)/Category(分类)/UIColor+LYUtil.m"; sourceTree = "<group>"; };
 		F7A031B9250767CD005C9C62 /* UILabel+LYUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LYUtil.h"; sourceTree = "<group>"; };
 		F7A031BA250767CE005C9C62 /* NSString+LYUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LYUtil.h"; sourceTree = "<group>"; };
 		F7A031BB250767CE005C9C62 /* UIImage+LYCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LYCompress.m"; sourceTree = "<group>"; };
@@ -873,6 +898,7 @@
 		42BE39B221AF905B0011E8C4 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				F751C6A12522C45D0092EC60 /* Http */,
 				4228956F21D71A3600593CB8 /* Objection */,
 				4286CE9221B8CD8700E3226C /* FXBlurView */,
 				4286CE7C21B8CD5A00E3226C /* GBEncodeTool */,
@@ -1144,8 +1170,6 @@
 				F7A0319C25075EED005C9C62 /* UINavigationController+FDFullscreenPopGesture.m */,
 				F7A031BA250767CE005C9C62 /* NSString+LYUtil.h */,
 				F7A031AE250767CC005C9C62 /* NSString+LYUtil.m */,
-				F7A031AD250767CC005C9C62 /* UIColor+LYUtil.h */,
-				F7A031B8250767CD005C9C62 /* UIColor+LYUtil.m */,
 				F7A031B7250767CD005C9C62 /* UIControl+LYEnlargeResponse.h */,
 				F7A031B0250767CD005C9C62 /* UIControl+LYEnlargeResponse.m */,
 				F7A031BC250767CE005C9C62 /* UIFont+LYUtil.h */,
@@ -1195,6 +1219,32 @@
 				7F0379370E8D9C373915127F /* Pods-BaseProjectUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F751C6A12522C45D0092EC60 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				F751C6A22522C45D0092EC60 /* PPBaseRequest.h */,
+				F751C6AC2522C45D0092EC60 /* PPBaseRequest.m */,
+				F751C6B02522C45D0092EC60 /* PPBatchRequest.h */,
+				F751C6A42522C45D0092EC60 /* PPBatchRequest.m */,
+				F751C6A92522C45D0092EC60 /* PPBatchRequestAgent.h */,
+				F751C6B32522C45D0092EC60 /* PPBatchRequestAgent.m */,
+				F751C6AA2522C45D0092EC60 /* PPChainRequest.h */,
+				F751C6B22522C45D0092EC60 /* PPChainRequest.m */,
+				F751C6A82522C45D0092EC60 /* PPChainRequestAgent.h */,
+				F751C6B42522C45D0092EC60 /* PPChainRequestAgent.m */,
+				F751C6AD2522C45D0092EC60 /* PPNetwork.h */,
+				F751C6B12522C45D0092EC60 /* PPNetworkAgent.h */,
+				F751C6A52522C45D0092EC60 /* PPNetworkAgent.m */,
+				F751C6AE2522C45D0092EC60 /* PPNetworkConfig.h */,
+				F751C6A72522C45D0092EC60 /* PPNetworkConfig.m */,
+				F751C6A62522C45D0092EC60 /* PPNetworkPrivate.h */,
+				F751C6AF2522C45D0092EC60 /* PPNetworkPrivate.m */,
+				F751C6AB2522C45D0092EC60 /* PPRequest.h */,
+				F751C6A32522C45D0092EC60 /* PPRequest.m */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		F7A031A525076737005C9C62 /* RootClass */ = {
@@ -1470,6 +1520,7 @@
 				4286CE9121B8CD5B00E3226C /* GTMBase64.m in Sources */,
 				42BE3C2F21AF905D0011E8C4 /* FLAnimatedImage.m in Sources */,
 				4228959121D71A3600593CB8 /* NSObject+Objection.m in Sources */,
+				F751C6B62522C45D0092EC60 /* PPBatchRequest.m in Sources */,
 				4228958B21D71A3600593CB8 /* JSObjectionInjectorEntry.m in Sources */,
 				42BE3C7321AF90890011E8C4 /* UILabel+ChangeLineSpace.m in Sources */,
 				42BE3C2921AF905D0011E8C4 /* NSMutableArray+AvoidCrash.m in Sources */,
@@ -1497,8 +1548,11 @@
 				428CE51621AE248700337560 /* DWSameFityViewController.m in Sources */,
 				F7A031C0250767CE005C9C62 /* UILabel+LYUtil.m in Sources */,
 				4228956521D7193500593CB8 /* HomeModule.m in Sources */,
+				F751C6B72522C45D0092EC60 /* PPNetworkAgent.m in Sources */,
 				F7A0319D25075EED005C9C62 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				425BC2E821B0CD8100387FBC /* JLRRouteDefinition.m in Sources */,
+				F751C6BB2522C45D0092EC60 /* PPChainRequest.m in Sources */,
+				F751C6B52522C45D0092EC60 /* PPRequest.m in Sources */,
 				42BE3C2421AF905D0011E8C4 /* NSString+AvoidCrash.m in Sources */,
 				425BC2DA21B0CD8100387FBC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				425BC2E021B0CD8100387FBC /* View+MASAdditions.m in Sources */,
@@ -1512,8 +1566,11 @@
 				42BE3C7021AF90890011E8C4 /* NSDate+transform.m in Sources */,
 				4228958F21D71A3600593CB8 /* JSObjectionInjector.m in Sources */,
 				4228959A21D71A7400593CB8 /* BaseVC.m in Sources */,
+				F751C6BA2522C45D0092EC60 /* PPNetworkPrivate.m in Sources */,
 				42BE3C2521AF905D0011E8C4 /* NSDictionary+AvoidCrash.m in Sources */,
 				F7A031BD250767CE005C9C62 /* NSString+LYUtil.m in Sources */,
+				F751C6BD2522C45D0092EC60 /* PPChainRequestAgent.m in Sources */,
+				F751C6B82522C45D0092EC60 /* PPNetworkConfig.m in Sources */,
 				4286CE8B21B8CD5B00E3226C /* RSACodeTool.m in Sources */,
 				42BE3C2C21AF905D0011E8C4 /* AvoidCrash.m in Sources */,
 				4228959221D71A3600593CB8 /* JSObjectionModule.m in Sources */,
@@ -1535,6 +1592,7 @@
 				42BE3C2721AF905D0011E8C4 /* NSMutableString+AvoidCrash.m in Sources */,
 				428CE51421AE248700337560 /* DWMineViewController.m in Sources */,
 				42BE3C3821AF905D0011E8C4 /* XHLaunchAd.m in Sources */,
+				F751C6BC2522C45D0092EC60 /* PPBatchRequestAgent.m in Sources */,
 				4228956C21D7193500593CB8 /* CollectionViewVC.m in Sources */,
 				4228959321D71A3600593CB8 /* JSObjectionProviderEntry.m in Sources */,
 				26C4CD9321F959E8005FC0C7 /* SystemInfo.m in Sources */,
@@ -1558,6 +1616,7 @@
 				425BC2E221B0CD8100387FBC /* MASViewConstraint.m in Sources */,
 				4228956821D7193500593CB8 /* AnimationViewController.m in Sources */,
 				42BE3C1121AF905D0011E8C4 /* GCDQueue.m in Sources */,
+				F751C6B92522C45D0092EC60 /* PPBaseRequest.m in Sources */,
 				42BE3C7121AF90890011E8C4 /* UIImageView+cornerRadius.m in Sources */,
 				42BE3C2021AF905D0011E8C4 /* UIViewController+SJVideoPlayerAdd.m in Sources */,
 				42BE3C2121AF905D0011E8C4 /* UINavigationController+SJVideoPlayerAdd.m in Sources */,
@@ -1585,7 +1644,6 @@
 				42BE3C0C21AF905D0011E8C4 /* DateFormatter.m in Sources */,
 				42BE3C7421AF90890011E8C4 /* UIBarButtonItem+SXCreate.m in Sources */,
 				42BE3C1321AF905D0011E8C4 /* GCDGroup.m in Sources */,
-				F7A031C3250767CE005C9C62 /* UIColor+LYUtil.m in Sources */,
 				42BE3C6F21AF90890011E8C4 /* NSString+transform.m in Sources */,
 				F7A031AB2507674E005C9C62 /* LYNavigationBarItemModel.m in Sources */,
 				42BE3C3F21AF905D0011E8C4 /* LaunchAdModel.m in Sources */,
