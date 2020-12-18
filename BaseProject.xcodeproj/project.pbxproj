@@ -167,6 +167,8 @@
 		F7A031C2250767CE005C9C62 /* UIImage+LYUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031B6250767CD005C9C62 /* UIImage+LYUtil.m */; };
 		F7A031C4250767CE005C9C62 /* UIImage+LYCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031BB250767CE005C9C62 /* UIImage+LYCompress.m */; };
 		F7A031C8250768E9005C9C62 /* LYCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A031C7250768E9005C9C62 /* LYCommonTool.m */; };
+		F7ADF7EE258C39A900DBC3CB /* HJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ADF7EC258C39A900DBC3CB /* HJHomeViewController.m */; };
+		F7ADF7EF258C39A900DBC3CB /* HJHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7ADF7ED258C39A900DBC3CB /* HJHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -520,6 +522,9 @@
 		F7A031BC250767CE005C9C62 /* UIFont+LYUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+LYUtil.h"; sourceTree = "<group>"; };
 		F7A031C6250768E9005C9C62 /* LYCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCommonTool.h; sourceTree = "<group>"; };
 		F7A031C7250768E9005C9C62 /* LYCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCommonTool.m; sourceTree = "<group>"; };
+		F7ADF7EB258C39A900DBC3CB /* HJHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJHomeViewController.h; sourceTree = "<group>"; };
+		F7ADF7EC258C39A900DBC3CB /* HJHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJHomeViewController.m; sourceTree = "<group>"; };
+		F7ADF7ED258C39A900DBC3CB /* HJHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HJHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -605,6 +610,9 @@
 				4228955521D7193400593CB8 /* DWHomeViewController.m */,
 				4228955221D7193400593CB8 /* TestVC.h */,
 				4228955421D7193400593CB8 /* TestVC.m */,
+				F7ADF7EB258C39A900DBC3CB /* HJHomeViewController.h */,
+				F7ADF7EC258C39A900DBC3CB /* HJHomeViewController.m */,
+				F7ADF7ED258C39A900DBC3CB /* HJHomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1396,6 +1404,7 @@
 				4286CE8A21B8CD5B00E3226C /* private_key.pfx in Resources */,
 				4228958A21D71A3600593CB8 /* LICENSE in Resources */,
 				428CE4DC21AE1FDD00337560 /* LaunchScreen.storyboard in Resources */,
+				F7ADF7EF258C39A900DBC3CB /* HJHomeViewController.xib in Resources */,
 				4286CE9C21B8CF3000E3226C /* readme.txt in Resources */,
 				428CE4D921AE1FDD00337560 /* Assets.xcassets in Resources */,
 				428CE4D721AE1FDB00337560 /* Main.storyboard in Resources */,
@@ -1649,6 +1658,7 @@
 				42BE3C3F21AF905D0011E8C4 /* LaunchAdModel.m in Sources */,
 				4228956621D7193500593CB8 /* TestVC.m in Sources */,
 				42BE3C3721AF905D0011E8C4 /* XHLaunchAdConst.m in Sources */,
+				F7ADF7EE258C39A900DBC3CB /* HJHomeViewController.m in Sources */,
 				425BC2EE21B0CDBC00387FBC /* AppDelegate+RegisterRoute.m in Sources */,
 				42BE3C1621AF905D0011E8C4 /* UIView+Shake.m in Sources */,
 				42BE3C7621AF90890011E8C4 /* NSString+TrimmingAdditions.m in Sources */,

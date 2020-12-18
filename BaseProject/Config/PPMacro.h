@@ -26,11 +26,33 @@
 #define iPhone6P_7P_8P ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(1080, 1920), [[UIScreen mainScreen] nativeBounds].size) : NO)
 #endif
 
-#define iPhoneX_XS ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] nativeBounds].size) : NO)
-#define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] nativeBounds].size) : NO)
-#define iPhoneXSMAX ([UIScreen instancesRespondToSelector:@selector(nativeBounds)] ?CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] nativeBounds].size) : NO)
+// 判断 iPad
+#define DX_UI_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
-#define IsFullScreen (iPhoneXR ||iPhoneX_XS || iPhoneXSMAX)
+// 判断iPhone X
+#define DX_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断iPHoneXr | 11
+#define DX_Is_iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//判断iPHoneXs | 11Pro
+#define DX_Is_iPhoneXS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//判断iPhoneXs Max | 11ProMax
+#define DX_Is_iPhoneXS_MAX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//判断iPhone12_Mini
+#define DX_Is_iPhone12_Mini ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1080, 2340), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//判断iPhone12 | 12Pro
+#define DX_Is_iPhone12 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//判断iPhone12 Pro Max
+#define DX_Is_iPhone12_ProMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) && !DX_UI_IS_IPAD : NO)
+
+//x系列
+#define IsFullScreen (DX_Is_iPhoneX || DX_Is_iPhoneXR || DX_Is_iPhoneXS || DX_Is_iPhoneXS_MAX || DX_Is_iPhone12_Mini || DX_Is_iPhone12 || DX_Is_iPhone12_ProMax)
+
 #define NavgationBarHeight 44
 /**
  状态栏高度
@@ -90,9 +112,3 @@
 #define RouteScheme @"routeScheme"
 #define pushUrl(_ref) [NSURL URLWithString:[NSString stringWithFormat:@"%@://push/%@",RouteScheme,_ref]];
 
-//是否和少儿有关
-#define isChild(_ref) (_ref == PPMediumTypeSECourse || \
-                       _ref == PPMediumTypeSEStory  || \
-                       _ref == PPMediumTypeSEPictureBook || \
-                       _ref == PPMediumTypeSEPocketAudio  || \
-                       _ref == PPMediumTypeSEChildrenSong)
