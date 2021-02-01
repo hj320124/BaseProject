@@ -11,6 +11,8 @@
 #import "CollectionViewVC.h"
 #import "CircleCollectionVC.h"
 #import "testDTO.h"
+#import "NSData+AES.h"
+#import "GBEncodeTool.h"
 @implementation DWHomeViewController
 -(void)viewDidLoad
 {
@@ -39,6 +41,8 @@
         NSString *ss=mm[i];
         NSLog(@"ppp==>%@",ss);
     }
+    
+    
     
 }
 
